@@ -6,7 +6,7 @@ console.log(firstLetter);
 
 let secondLetter = string[1]
 let thirdLetter = string[2]
-let lastLetter = string[6]
+let lastLetter = string[5]
 console.log(secondLetter,thirdLetter,lastLetter);
 
 
