@@ -1,0 +1,22 @@
+Problem:
+    Given a string input, how will you check if the word "animal" is present in the input?
+
+
+what is the function that you are going to use? 
+    im going to use match method of the string datatype
+
+what is the name of the function?
+    match is the name of the function 
+
+what is the data type of input?
+    regular expression is the data type of the input
+
+what is the actual input of the function?
+    input string: "This is an animal"
+    pattern: /animal/ is the input of the function
+
+what is the data type of the output?
+    array of string is the datatype of the output
+
+what is the output of the function?
+    
