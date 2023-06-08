@@ -13,3 +13,7 @@ let remainder = numOne % numTwo
 let powerOf = numOne ** numTwo
 
 console.log(sum, diff, mult, div, remainder, powerOf) 
+
+
+
+
