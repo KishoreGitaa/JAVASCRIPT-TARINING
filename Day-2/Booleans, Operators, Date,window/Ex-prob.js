@@ -21,7 +21,6 @@ let number = answer
 let message = answer > 20 ?("ok"):("not ok")
 console.log(message); 
 
-
 let a1=11
 let b1=10
 
@@ -37,6 +36,7 @@ console.log(M)
 console.log(D)
 console.log(H)
 console.log(MI);
+
 console.log(M,D,H,MI);
 
 
