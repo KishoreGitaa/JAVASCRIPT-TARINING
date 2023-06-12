@@ -46,4 +46,42 @@ console.log(company1.toUpperCase());
 console.log(company2.toUpperCase());
 console.log(company3.toUpperCase());
 
+// Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+let sentence = itCompanies.join(', ') + ' are big IT companies.';
+console.log(sentence);
 
+// Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+let Check = 'Microsoft';
+if (itCompanies.includes(Check)) {
+  console.log(Check + ' exists in the itCompanies array.');
+} else {
+  console.log(Check + ' is not found in the itCompanies array.');
+}
+
+// Sort the array using sort() method
+itCompanies.sort();
+console.log(itCompanies);
+// Reverse the array using reverse() method
+itCompanies.reverse();
+console.log(itCompanies);
+//Slice out the first 3 companies from the array
+let firstThreeCompanies = itCompanies.slice(0, 3);
+console.log(firstThreeCompanies);
+// Slice out the last 3 companies from the array
+let lastThreeCompanies = itCompanies.slice(-3);
+console.log(lastThreeCompanies);
+// Slice out the middle IT company or companies from the array
+let middle = Math.floor(itCompanies.length/2)
+console.log(itCompanies[middle]);
+// Remove the first IT company from the array
+let removeFirstCompany = itCompanies.shift()
+console.log(removeFirstCompany);
+// Remove the middle IT company or companies from the array
+let removeMiddleCompany = Math.floor(itCompanies.length/2)
+console.log(itCompanies[removeMiddleCompany]);
+// Remove the last IT company from the array
+let removeLastCompany = itCompanies.pop()
+console.log(removeLastCompany);
+// // Remove all IT companies
+let remove = itCompanies.length = 0;
+console.log(remove);
