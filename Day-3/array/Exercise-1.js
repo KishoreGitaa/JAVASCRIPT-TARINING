@@ -85,3 +85,4 @@ console.log(removeLastCompany);
 // // Remove all IT companies
 let remove = itCompanies.length = 0;
 console.log(remove);
+
