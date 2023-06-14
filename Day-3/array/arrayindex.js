@@ -15,5 +15,6 @@ const indiaCompamies = companies;
 console.log(indiaCompamies);
 console.log(indiaCompamies.length);
 console.log(indiaCompamies[2]);
+
 let lastindex = indiaCompamies.length -1 
 console.log(indiaCompamies[lastindex]);

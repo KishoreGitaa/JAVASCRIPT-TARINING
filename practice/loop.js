@@ -1,4 +1,22 @@
 
+// // 0 to 9 
+// for (let i=0; i<=9;i++){
+//     console.log(i);
+// }
+// console.log("");
+
+// let number = 9 
+// let i=0
+// while (i <= number){
+//     console.log(i);
+//     i++
+// }
+
+// let num = 5
+// for (let i=1 ;i <= num; i++){
+//     console.log("#".repeat(i));
+// }
+
 // // for(let i=1 ; i<=10; i+=5){
 // //     console.log(i);
 // // }
@@ -22,12 +40,33 @@
 
 // 1000 / 3
 
-let emety = []
-let number = 1000
-for (let i=1; i<=number; i++){
-    if (i % 3 == 0 ){
-        // console.log(i);
-        emety.push(i)
-    }
+// let emety = []
+// let number = 1000
+// for (let i=1; i<=number; i++){
+//     if (i % 3 == 0 ){
+//         // console.log(i);
+//         emety.push(i)
+//     }
+// }
+// console.log(emety, {'maxArrayLength': null});
+
+
+// let myname = ["akash","kishore","nithiya"]
+// let rollnum = [01,02,03]
+// let length = myname.length
+// for (let i=0; i< length;i++){
+//         // console.log(i);
+//     console.log(myname[i],"-",rollnum[i]);
+// }
+
+let fruit = ["apple","banana","mango"]
+let price = [10,05,15]
+let quantity=[5,2,2]
+let len = fruit.length
+let sum = 0;
+for (let i=0;i<len;i++){
+    console.log(fruit[i],"-",quantity[i],"=",price[i]*quantity[i]);
+    sum = sum + price[i]*quantity[i]
 }
-console.log(emety, {'maxArrayLength': null});
+console.log(sum);
+
