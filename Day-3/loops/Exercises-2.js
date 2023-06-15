@@ -1,45 +1,35 @@
-// // Write a script which generates a random rgb color number.
-// let rgb =[]
-// let color1=[]
-// let color2=[]
-// let color3=[]
-// color1.push(Math.floor(Math.random()*1000))
-// color2.push(Math.floor(Math.random()*1000))
-// color3.push(Math.floor(Math.random()*1000))
-// console.log(color1);
-// console.log(color2);
-// console.log(color3);
-// rgb.push(color1,color2,color3);
-// console.log("rgb (",rgb.toString(),")");
+// Write a script which generates a random rgb color number.
+let rgb =[]
+let color1=[]
+let color2=[]
+let color3=[]
+color1.push(Math.floor(Math.random()*1000))
+color2.push(Math.floor(Math.random()*1000))
+color3.push(Math.floor(Math.random()*1000))
+console.log(color1);
+console.log(color2);
+console.log(color3);
+rgb.push(color1,color2,color3);
+console.log("rgb (",rgb.toString(),")");
 
 // Using the  countries array, create the following new array.
 let emety=[]
 const countries = ['Albania','Bolivia','Canada','Denmark','Ethiopia','Finland','Germany','Hungary','Ireland','Japan','Kenya']
-// for (let i=0;i<countries.length;i++){
-//     let list = countries[i]
-//     emety.push(list.toUpperCase())
+for (let i=0;i<countries.length;i++){
+    let list = countries[i]
+    emety.push(list.toUpperCase())
     
-// // Using the  countries array, create an array for countries length'.
-//     console.log(countries[i].length);
-// }
-// console.log(emety);
+// Using the  countries array, create an array for countries length'.
+    console.log(countries[i].length);
+}
+console.log(emety);
 
 // Use the countries array to create the following array of arrays:
-// let addarr=[]
-// for (i=0;i<countries.length;i++){
-//     let name = countries[i]
-//     console.log(name);
-//     addarr.push(name)
-
-//     let firstthreeletter= name.slice(0,3);
-//     addarr.push(firstthreeletter.toUpperCase())
-//     console.log(firstthreeletter);
-    
-//     let length =countries[i].length
-//     addarr.push(length)
-//     console.log(length);
-// }
-// console.log(addarr);
+let addarr=[]
+for (let i of countries){
+    addarr.push([i,i.slice(0,3),i.length])
+}
+console.log(addarr);
 
 // In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
 let find =[]
@@ -69,28 +59,67 @@ let find1 =[]
         console.log('All these countries are without land');
 }
 // Using the above countries array, find the country containing the biggest number of characters.
-let big =[]
-
-for (let i=0;i<countries.length;i++){
-
-    let length =countries[i].length
-    // console.log(length);
-    big.push(length)
-
-}
-let findbig = big.sort()
-let mixi = findbig.length -1
-let value = findbig[mixi]
-console.log(value);
 for (let i=0;i<countries.length;i++){
     if(value == countries[i].length){
         console.log(countries[i]);
     }
 }
 
+// Using the above countries array, find the country containing only 5 characters.
+let lessfivecharacters =[]
+for (let i=0; i<countries.length; i++){
+    let length = countries[i].length
+    if(length == 5){
+        lessfivecharacters.push(countries[i])
+    }
+}
+console.log("5 characters countries ",lessfivecharacters);
 
+// Find the longest word in the webTechs array
+const webTechs = ['HTML','CSS','JavaScript','React','Redux','Node','MongoDB']
+let longword = ''
+for(let i=0;i<webTechs.length;i++){
+    if(webTechs[i].length > longword.length){
+        longword = webTechs[i]
+    }
+}
+console.log("longest word in the webTechs array = ",longword);
 
+// Use the webTechs array to create the following array of arrays:
+let arr1 = []
+    for (let i of webTechs){
+        arr1.push([i,i.length]) 
+    }
+console.log(arr1);
 
+// Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
+let array = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] 
+for(let i of array){
+    console.log(i);
+}
 
+// An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
+let array4 = ''
+let course = ["MongoDB", "Express", "React" , "Node"]
+for (i of course){
+    array4 += i[0]
+}
+console.log("acronym MERN by using the array mernStack = ",array4);
 
+// This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
+let fruit = ['banana', 'orange', 'mango', 'lemon']
+let reverse =[]
+for (let i=fruit.length-1; i>=0;i--){
+    reverse.push(fruit[i])
+}
+console.log(reverse);
 
+// Print all the elements of array as shown below.
+const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+  ]
+for (let i of fullStack){
+    for (let a of i)
+    console.log(a);
+}
