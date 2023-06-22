@@ -9,7 +9,7 @@ Bark : function() {
 },
 Breed:"Labrodor",
 getDogInfo : function(){
-    return `${dog.name} is a ${dog.color} ${dog.breed} with ${dog.legs} legs and is ${dog.age} years old.`;
+    return `${dog.Name} is a ${dog.Color} ${dog.Breed} with ${dog.Legs} legs and is ${dog.Age} years old.`;
 }
 };
 // Print the dog object on the console

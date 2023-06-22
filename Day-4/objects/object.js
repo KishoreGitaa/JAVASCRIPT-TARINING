@@ -67,10 +67,10 @@ console.log(getFullName(copyPerson));
 const keys = Object.keys(person1);
 console.log("Getting object keys using Object.keys()", keys);
 const address = Object.keys(person1.address);
-console.log("Getting object keys using Object.keys()", address);
+console.log("Getting object keys using Object.address()", address);
 
 // Getting object values using Object.values()
-const values = Object.values(person);
+const values = Object.values(person1);
 console.log("Getting object values using Object.values()", values);
 
 // Getting object keys and values using Object.entries()
