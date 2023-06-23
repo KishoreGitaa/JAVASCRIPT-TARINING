@@ -54,16 +54,29 @@ fullName("Kishore", "Magi", "V");
 // ● PROBLEM #2 - FUNCTIONS - LOOPS
 // Write a function to print the square pattern
 function pattern(num) {
-    for (var i = 1; i <= num; i++) {
-      var row = "";
-      for (var j = 1; j <= num; j++) {
-        row += "* ";
-      }
-      console.log(row);
+  for (var i = 1; i <= num; i++) {
+    var row = "";
+    for (var j = 1; j <= num; j++) {
+      row += "* ";
     }
+    console.log(row);
   }
+}
 pattern(5);
-  
+// PROBLEM 3
+function find(arr, key) {
+  var start = arr.indexOf(key);
+  var end = arr.lastIndexOf(key);
+  if (start === -1) {
+    return -1 + " " + -1;
+  } else {
+    return start + " " + end;
+  }
+}
+var arr = [1, 2, 3, 4, 5, 5];
+var key = 5;
+console.log(find(arr, key));
+
 // Given an integer array Arr[] of size N. The task is to find sum of it.
 function value(arr) {
   let n = arr;
