@@ -1,21 +1,24 @@
-let start = 1
-let end = 10
-let value = 5
-for (let i=start;i<=end;i++)
-{
-    if(value <= i){
-        console.log(i);
-    }
-}
+// let start = 1
+// let end = 10
+// let value = 5
+// for (let i=start;i<=end;i++)
+// {
+//     if(value <= i){
+//         console.log(i);
+//     }
+// }
 
 
 
 let number = 100;
+let  div = 5
 let result = number
 
 let i = 1;
-while (result !== 0) {
-  result = Math.floor(result / 2);
+while (result >= div) {
+  
+  
+  result = Math.floor(result / div);
   console.log("Result",i,":",result);
   i++
 }

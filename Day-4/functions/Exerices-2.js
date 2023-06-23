@@ -54,7 +54,7 @@ showDateTime();
   swapValues(3, 4);
   swapValues(4, 5);
 
-  // Exercise 6: Reverse an array
+  // Reverse an array
   function reverseArray(arr) {
     let reversedArray = [];
     for (let i = arr.length - 1; i >= 0; i--) {

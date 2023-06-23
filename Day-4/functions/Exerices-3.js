@@ -30,14 +30,30 @@
   
   // Function to calculate the factorial of a number
   function factorial(number) {
-    if (number === 0 || number === 1) {
-      return 1;
-    } else {
-      return number * factorial(number - 1);
-    }
+  let total =1
+  for (let i = 0; i < number; i++){
+    total = total * (number -i)
   }
-  console.log("factorial",factorial(5));
-  
+  return total
+}
+console.log("Factorial",factorial(5));
+
+  // Function to calculate the fibonacci of a number
+  function fibonacci(number){
+   let n1 = 0;
+   let n2 = 1;
+   let sum;
+   for (i = 0; i < number; i++){
+    console.log(n1);
+   sum = n1;
+   n1 = n2;
+   n2 = sum + n1
+  }
+  return n1
+  }
+  console.log("Fibonacci",fibonacci(5));
+
+
   // Function to check if a variable is empty
   function isEmpty(value) {
     if (value === undefined || value === null || value === "") {
@@ -148,3 +164,16 @@
     return reversedCountries;
   }
   console.log(reverseCountries(["USA", "Canada", "Mexico"]));
+
+    let number = [5, 2, 2, 3, 3,4,4]
+    let result = [];  
+    for (let i = 0; i < number.length; i++) {
+      if (number[i] !== number[i+1] && number[i] !== number[i-1] ) {  
+        result.push(number[i])
+      }
+    }
+    console.log(result);
+  
+  
+
+  
