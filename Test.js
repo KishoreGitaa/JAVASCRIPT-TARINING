@@ -77,6 +77,20 @@ var arr = [1, 2, 3, 4, 5, 5];
 var key = 5;
 console.log(find(arr, key));
 
+function finds(arr, key) {
+  var start = arr.indexOf(key);
+  var end = arr.lastIndexOf(key);
+
+  if (start === -1) {
+    return -1 + " " + -1;
+  } else {
+    return start + " " + end;
+  }
+}
+var arr = [6, 5, 4, 3, 1, 2];
+var key = 4;
+console.log(finds(arr, key));
+
 // Given an integer array Arr[] of size N. The task is to find sum of it.
 function value(arr) {
   let n = arr;
