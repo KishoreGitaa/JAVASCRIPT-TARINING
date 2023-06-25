@@ -31,14 +31,18 @@ while (result >= div) {
 // }
 
 
-// for (let i=1; i<=10; i++){
-// console.log(" ");
-//   let number = i
-//   let range = 10
-//   for (let i=1;i<=range;i++){
-//     let table = number * i
-//     console.log(number,"*",i,"=",table)
-//   }
+for (let i=1; i<=10; i++){
+  console.log("");
+  let number = i
+  let range= 10
+  for(let i=1;i<=range;i++){
+    let table = number * i
+    console.log(number,"*",i,"=",table);
+  }
+}
 
-// }
-
+const a = 1
+for (let i=1;i<=10;i++){
+  let table = a *i
+  console.log(a,"*",i,"=",table);
+}

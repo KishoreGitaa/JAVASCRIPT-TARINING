@@ -63,6 +63,7 @@ function pattern(num) {
   }
 }
 pattern(5);
+
 // PROBLEM 3
 function find(arr, key) {
   var start = arr.indexOf(key);
