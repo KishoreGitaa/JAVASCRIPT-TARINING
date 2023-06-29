@@ -67,3 +67,47 @@ function getStringLists(array) {
 //17 Use reduce to sum all the numbers in the numbers array.
 const sum = numbers.reduce((accumulator, currentNumber) => accumulator + currentNumber, 0);
 console.log(sum);
+
+//  18 Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+const concat = countries.reduce((acc,cur) => acc+cur,)
+console.log(concat);
+
+// 19 Explain the difference between some and every
+// some can check the element if any one is number its return boolen true   
+// every can check the element if any one is not a number its return boolen false
+
+// 20 Use some to check if some names' length greater than seven in names array
+const checksome = names.some(name => name.length > 7)
+console.log(checksome);
+
+// 21 Use every to check if all the countries contain the word land
+const checkland = countries.every(land => land.includes("land"))
+console.log(checkland);
+
+// 22 Explain the difference between find and findIndex.
+// Return the first element which satisfies the condition
+// Return the position of the first element which satisfies the condition
+
+// 23 Use find to find the first country containing only six letters in the countries array
+const countriesletter = countries.find(length => length.length === 6)
+console.log(countriesletter);
+
+// 24 Use findIndex to find the position of the first country containing only six letters in the countries array
+const countrieslette = countries.findIndex(length => length.length === 6)
+console.log(countrieslette);
+
+// 25 Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+const check = countries.findIndex(index => index.includes("Norway"))
+if(check){
+  console.log(check);
+}else{
+  console.log(-1);
+}
+
+// 26 Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+const check1 = countries.findIndex(index => index.includes("Russia"))
+if(check1){
+  console.log(check1);
+}else{
+  console.log(-1);
+}

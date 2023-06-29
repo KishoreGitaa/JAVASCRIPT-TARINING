@@ -45,3 +45,31 @@ console.log(setOfCompanies.has('Facebook'))
 console.log("before Clearing",setOfCompanies);
 setOfCompanies.clear()
 console.log("after Clearing",setOfCompanies);
+
+// Union of sets
+let a = [1, 2, 3, 4, 5]
+let b = [3, 4, 5, 6]
+let c = [...a, ...b]
+
+let A = new Set(a)
+let B = new Set(b)
+let C = new Set(c)
+
+console.log(C)
+
+// Intersection of sets
+let d = [1, 2, 3, 4, 5]
+let e = [3, 4, 5, 6]
+
+let D = new Set(d)
+let E = new Set(e)
+
+let f = d.filter((num) => E.has(num))
+let F = new Set(f)
+
+console.log(F)
+
+// Difference of sets
+let g = d.filter((num) => !E.has(num))
+let G = new Set(g)
+console.log(G)

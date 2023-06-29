@@ -92,8 +92,8 @@ const score = scores.find(user => user.score > 80)
 console.log(score)
 
 // findIndex
-const resul = names.findIndex((name) => name.length < 7)
-console.log(resul)
+const resul = mynames.findIndex((name) => name.length > 7)
+console.log("index of ",resul)
 
 // some
 const areAllStr = names.some((name) => typeof name === 'number') 
