@@ -4,9 +4,10 @@
 // Input: "2022-12-25"
 // Output: "Sunday"
 
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let now = new Date("2022-12-25")
+const dayOfWeek = now.getDay()
+console.log(daysOfWeek[dayOfWeek])
 
-let now = new Date()
-console.log(now.getDay())
 
-
-console.log(now.toDateString("2022-12-25"));
+// console.log(now.toDateString("2022-12-25"));

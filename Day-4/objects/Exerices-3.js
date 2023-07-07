@@ -40,4 +40,3 @@ personAccount.addExpense("Groceries", 500);
 
 console.log(personAccount.accountInfo());
 console.log("Account Balance:", personAccount.accountBalance());
-

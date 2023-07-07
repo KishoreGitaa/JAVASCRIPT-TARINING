@@ -3,14 +3,8 @@
 // Input: ["hello", "world"]
 // Output: ["olleh", "dlrow"]
 
-let myname = ["hello"]
-for(let i=0;i<myname.length;i++){
-    let rev = myname[i].length-1
-    console.log(rev);
-    
-    
+function reverseStrings(strings) {
+  return strings.map((string) => string.split("").reverse().join(""));
 }
 
-const num = [1,2,3,4,5,6]
-console.log(num.reverse())
-
+console.log(reverseStrings(["hello", "world"])); 

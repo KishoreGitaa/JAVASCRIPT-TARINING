@@ -22,7 +22,7 @@ numberSet.clear();
 console.log(numberSet);
 
 // Create a set of 5 string elements from array
-const stringArray = ['apple', 'banana', 'orange', 'kiwi', 'mango'];
+const stringArray = ['apple', 'banana', 'orange', 'kiwi', 'mango','hello'];
 const stringSet = new Set(stringArray.slice(0, 5));
 console.log(stringSet);
 
