@@ -125,5 +125,5 @@ func();
 func();
 func();
 
-// console.clear()
-console.clear();
+// // console.clear()
+// console.clear();

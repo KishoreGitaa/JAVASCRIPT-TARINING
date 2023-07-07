@@ -60,7 +60,6 @@ const users = {
 const txt = JSON.stringify(users, undefined, 4);
 console.log(txt); // text means JSON- because json is a string form of an object.
 
-
 // Using a Filter Array with JSON.stringify
 
 const user = {

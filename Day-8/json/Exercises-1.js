@@ -1,13 +1,13 @@
-const skills = ['HTML', 'CSS', 'JS', 'React','Node', 'Python']
+const skills = ["HTML", "CSS", "JS", "React", "Node", "Python"];
 let age = 250;
-let isMarried = true
+let isMarried = true;
 const student = {
-  firstName:'Asabeneh',
-  lastName:'Yetayehe',
-  age:250,
-  isMarried:true,
-  skills:['HTML', 'CSS', 'JS', 'React','Node', 'Python', ]
-}
+  firstName: "Asabeneh",
+  lastName: "Yetayehe",
+  age: 250,
+  isMarried: true,
+  skills: ["HTML", "CSS", "JS", "React", "Node", "Python"],
+};
 const txt = `{
     "Alex": {
         "email": "alex@alex.com",
@@ -103,16 +103,20 @@ const txt = `{
         "points": 40
     }
 }
-`
+`;
 
 // Change skills array to JSON using JSON.stringify()
+const skillsJSON = JSON.stringify(skills);
+console.log(skillsJSON);
 
 // Stringify the age variable
-const ag = JSON.stringify(student,['age'])
+const ag = JSON.stringify(age);
 console.log(ag);
+
 // Stringify the isMarried variable
-const marr = JSON.stringify(student,['isMarried'])
+const marr = JSON.stringify(isMarried);
 console.log(marr);
+
 // Stringify the student object
-const students = JSON.stringify(student)
+const students = JSON.stringify(student);
 console.log(students);
