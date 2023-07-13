@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <h1 class="title" id="first-title">First Title</h1>
+    <h1 class="title" id="second-title">Second Title</h1>
+    <h1 class="title" id="third-title">Third Title</h1>
+    <h1></h1>
+  </body>
+</html>
+
+<!-- Adding attribute -->
+<script>
+  const titles = document.querySelectorAll("h1");
+  titles[3].className = "title";
+  titles[3].id = "fourth-title";
+  console.log(titles);
+  console.log(titles[3].className);
+  console.log(titles[3].id);
+
+  // Adding attribute using setAttribute
+  const titles = document.querySelectorAll("h1");
+  titles[3].setAttribute("class", "title");
+  titles[3].setAttribute("id", "fourth-title");
+</script>
