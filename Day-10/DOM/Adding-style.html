@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <h1 class="title" id="first-title">First Title</h1>
+    <h1 class="title" id="second-title">Second Title</h1>
+    <h1 class="title" id="third-title">Third Title</h1>
+    <h1></h1>
+  </body>
+</html>
+<!-- Adding Style Color -->
+<script>
+  const titles = document.querySelectorAll("h1");
+  titles.forEach((title, i) => {
+    title.style.fontSize = "24px"; // all titles will have 24px font size
+    if (i % 2 === 0) {
+      title.style.color = "green";
+    } else {
+      title.style.color = "red";
+    }
+  });
+</script>
+
+<!-- Adding Style Background Color -->
+<script>
+  const titles1 = document.querySelectorAll("h1");
+  titles1.forEach((title, i) => {
+    title.style.fontSize = "24px";
+    if (i % 2 == 0) {
+      title.style.backgroundColor = "red";
+    } else {
+      title.style.backgroundColor = "green";
+    }
+  });
+</script>
+
+<!-- Adding Style Font Size -->
+<script>
+    const titles3 = document.querySelectorAll('h1')
+titles.forEach((title, i) => {
+  title.style.fontSize = '24px' // all titles will have 24px font size
+  if (i % 2 === 0) {
+    title.style.fontSize = '30px'
+  } else {
+    title.style.fontSize = '50px'
+  }
+})
+</script>

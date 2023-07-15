@@ -23,5 +23,22 @@
   const titles1 = document.querySelectorAll("h1");
   titles1[3].setAttribute("class", "title");
   titles1[3].setAttribute("id", "fourth-title");
-  console.log(titles1)
+  console.log(titles1);
+
+  //   Adding attribute without setAttribute
+  //   const titles = document.querySelectorAll("h1");
+  //   titles[3].className = "title";
+  //   titles[3].id = "fourth-title";
+  //   console.log(titles[3].className);
+  //   console.log(titles[3].id);
+
+  //Adding class using classList
+  const titles2 = document.querySelectorAll("h1");
+  titles[3].classList.add("kishore", "header-title");
+  console.log(titles2);
+
+  // Removing class using remove
+  const titles3 = document.querySelectorAll("h1");
+  titles[3].classList.remove("kishore", "header-title");
+  console.log(titles3);
 </script>

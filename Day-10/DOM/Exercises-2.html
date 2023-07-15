@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paragraph Example</title>
+  </head>
+  <body>
+    <p>First Paragraph</p>
+    <p id="second">Second Paragraph</p>
+    <p id="third">Third Paragraph</p>
+    <p id="fourth">Fourth Paragraph</p>
+  </body>
+</html>
+
+<script>
+  // Get all p as nodeList using document.querySelectorAll(tagname) and by their tag name
+  const allParagraphs = document.querySelectorAll("p");
+
+  // Loop through each paragraph and modify their styles
+  allParagraphs.forEach((paragraph, i) => {
+    // Change the text content of each paragraph
+    paragraph.textContent = "Paragraph", i + 1;
+
+    // Set id and class attribute for each paragraph
+    paragraph.setAttribute("id", 'p',i + 1);
+    paragraph.classList.add("paragraph");
+
+    // Change the style of each paragraph
+    if (i % 2 === 0) {
+      // First and third paragraphs
+      paragraph.style.color = "green";
+      paragraph.style.background = "lightgray";
+      paragraph.style.border = "1px solid black";
+      paragraph.style.fontSize = "16px";
+      paragraph.style.fontFamily = "Arial, sans-serif";
+    } else {
+      // Second and fourth paragraphs
+      paragraph.style.color = "red";
+      paragraph.style.background = "white";
+      paragraph.style.border = "1px dashed black";
+      paragraph.style.fontSize = "14px";
+      paragraph.style.fontFamily = "Verdana, sans-serif";
+    }
+  });
+</script>

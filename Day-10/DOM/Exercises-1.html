@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paragraph Example</title>
+  </head>
+  <body>
+    <p>First Paragraph</p>
+    <p id="second">Second Paragraph</p>
+    <p id="third">Third Paragraph</p>
+    <p id="fourth">Fourth Paragraph</p>
+  </body>
+</html>
+<script>
+  // Get the first paragraph by using document.querySelector(tagname)
+  const firstParagraph = document.querySelector("p");
+  console.log("First paragraph:", firstParagraph.innerHTML);
+
+  // Get each paragraph using document.querySelector('#id') and by their id
+  const secondParagraph = document.querySelector("#second");
+  console.log("Second paragraph:", secondParagraph.innerHTML);
+
+  const thirdParagraph = document.querySelector("#third");
+  console.log("Third paragraph:", thirdParagraph.innerHTML);
+
+  const fourthParagraph = document.querySelector("#fourth");
+  console.log("Fourth paragraph:", fourthParagraph.innerHTML);
+
+  // Get all p as nodeList using document.querySelectorAll(tagname) and by their tag name
+  const allParagraphs = document.querySelectorAll("p");
+  console.log(allParagraphs);
+
+  // Loop through the nodeList and get the text content of each paragraph
+  allParagraphs.forEach((text) => {
+    console.log("Paragraph:", text.textContent);
+  });
+
+  // Set a text content to the fourth paragraph
+  fourthParagraph.textContent = "Fourth Paragraph";
+
+  // Set id and class attribute for all the paragraphs using different attribute setting methods
+  allParagraphs.forEach((paragraph, index) => {
+    paragraph.setAttribute("id", `p${index + 1}`);
+    paragraph.classList.add("paragraph");
+  });
+</script>
