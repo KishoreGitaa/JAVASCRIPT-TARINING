@@ -1,0 +1,103 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript for Everyone:DOM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .wrapper {
+        margin: 50px;
+      }
+      li {
+        list-style: none;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Asabeneh Yetayeh challenges in 2020</h1>
+      <h2>30DaysOfJavaScript Challenge</h2>
+      <h3 id="currentDate"></h3>
+      <ul>
+        <li>30DaysOfPython Challenge Done</li>
+        <li id="jsChallenge">30DaysOfJavaScript Challenge Ongoing</li>
+        <li id="reactChallenge">30DaysOfReact Challenge Coming</li>
+        <li id="fullStackChallenge">30DaysOfFullStack Challenge Coming</li>
+        <li id="dataAnalysisChallenge">
+          30DaysOfDataAnalysis Challenge Coming
+        </li>
+        <li id="reactNativeChallenge">30DaysOfReactNative Challenge Coming</li>
+        <li id="machineLearningChallenge">
+          30DaysOfMachineLearning Challenge Coming
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      //get a random color in hexadecimal format
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      // The year color is changing every 1 second
+      function yearColor() {
+        const year = document.querySelector("h1");
+        setInterval(() => {
+          const randomColor = getRandomColor();
+          year.style.color = randomColor;
+        }, 1000);
+      }
+
+      // The date and time background color is changing every on seconds second
+      function changeDateTimeBgColor() {
+        const dateTimeElement = document.querySelector("h2");
+        setInterval(() => {
+          const randomColor = getRandomColor();
+          dateTimeElement.style.backgroundColor = randomColor;
+        }, 1000);
+      }
+      // Function to update the current date and time every second
+      function updateDateTime() {
+        const currentDateElement = document.getElementById("currentDate");
+        setInterval(() => {
+          const currentDate = new Date();
+          currentDateElement.innerHTML = currentDate.toLocaleString();
+        }, 1000);
+      }
+      // Function to update challenge status based on the current date
+      function updateChallengesStatus() {
+        const currentDate = new Date();
+        const jsChallengeElement = document.getElementById("jsChallenge");
+        const reactChallengeElement = document.getElementById("reactChallenge");
+
+        const jsChallengeDate = new Date("2020-04-01");
+        const reactChallengeDate = new Date("2020-07-01");
+
+        if (
+          currentDate >= jsChallengeDate &&
+          currentDate < reactChallengeDate
+        ) {
+          jsChallengeElement.style.backgroundColor = "yellow"; // Ongoing challenge
+        } else if (currentDate >= reactChallengeDate) {
+          jsChallengeElement.style.backgroundColor = "green"; // Completed challenge
+          reactChallengeElement.style.backgroundColor = "yellow"; // Ongoing challenge
+        } else {
+          jsChallengeElement.style.backgroundColor = "red"; // Coming challenge
+          reactChallengeElement.style.backgroundColor = "red"; // Coming challenge
+        }
+      }
+
+      // Call the functions to start the dynamic behavior
+      yearColor();
+      changeDateTimeBgColor();
+      updateChallengesStatus();
+    </script>
+  </body>
+</html>

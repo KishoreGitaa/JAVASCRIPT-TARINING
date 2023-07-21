@@ -1,0 +1,46 @@
+<style>
+  .red {
+    background-color: red;
+  }
+  .yellow {
+    background-color: yellow;
+  }
+  .green {
+    background-color: green;
+  }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Traffic Light</title>
+  </head>
+  <body>
+    <div class="light">
+      <h1 id="traffic-light" class="red">RED</h1>
+    </div>
+  </body>
+</html>
+<script>
+  function changeColor() {
+    var elem = document.getElementById("traffic-light");
+    elem.setAttribute("class", "yellow");
+    elem.innerText = "YELLOW";
+    console.log(elem);
+    setTimeout(changeColor1, 2000);
+  }
+  function changeColor1() {
+    var elem = document.getElementById("traffic-light");
+    elem.setAttribute("class", "green");
+    elem.innerText = "GREEN";
+    console.log(elem);
+    setTimeout(changeColor2, 2000);
+  }
+  function changeColor2() {
+    var elem = document.getElementById("traffic-light");
+    elem.setAttribute("class", "red");
+    elem.innerText = "RED";
+    console.log(elem);
+    setTimeout(changeColor, 2000);
+  }
+  setTimeout(changeColor, 3000);
+</script>

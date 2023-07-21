@@ -31,15 +31,16 @@
 
   // Loop through the nodeList and get the text content of each paragraph
   allParagraphs.forEach((text) => {
-    console.log("Paragraph:", text.textContent);
+    console.log("Paragraph:", text.innerHTML);
   });
 
   // Set a text content to the fourth paragraph
-  fourthParagraph.textContent = "Fourth Paragraph";
+  console.log(fourthParagraph.innerHTML = "Fourt Paragraph");
 
   // Set id and class attribute for all the paragraphs using different attribute setting methods
-  allParagraphs.forEach((paragraph, index) => {
-    paragraph.setAttribute("id", `p${index + 1}`);
+  allParagraphs.forEach((paragraph, i) => {
+    paragraph.setAttribute("id", "p",i + 1);
     paragraph.classList.add("paragraph");
+    console.log(paragraph)
   });
 </script>
